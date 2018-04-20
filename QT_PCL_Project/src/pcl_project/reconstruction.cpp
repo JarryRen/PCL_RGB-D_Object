@@ -14,6 +14,7 @@ void gp::reconsruction::pcd_to_mesh(pcl::PointCloud< gp::PointT >::Ptr cloud, pc
     mesh_coloring(mesh,cloud);
   }
   if(method == 2){
+
   }
 }
 
@@ -36,6 +37,7 @@ void gp::reconsruction::moving_least_sauares(pcl::PointCloud< gp::PointT >::Ptr 
   */
   mls.process(*output);
 }
+
 
 void gp::reconsruction::poisson(pcl::PointCloud< gp::PointT >::Ptr cloud, pcl::PolygonMesh& mesh)
 {
